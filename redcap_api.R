@@ -22,7 +22,7 @@ url <- 'https://redcap.med.upenn.edu/api/'
 formData <- list('token' = creds$token[1],
                  content = 'report',
                  format = 'csv',
-                 report_id = creds$report_id[1],
+                 report_id = creds$report_id[1], # when report is selected in REDCap, the 5-digit ID will be displayed in the URL
                  csvDelimiter = '',
                  rawOrLabel = 'raw',
                  rawOrLabelHeaders = 'raw',
